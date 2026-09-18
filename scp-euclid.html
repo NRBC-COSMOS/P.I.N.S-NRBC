@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SCP-EUCLID - Dossiers SCP</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(80, 60, 0, 0.45),
+                    #060502 70%
+                );
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+            color: white;
+            text-shadow: 0 0 15px #ffb800;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #ffdd99;
+            margin-bottom: 45px;
+        }
+
+        .scp-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .scp-card {
+            display: block;
+            padding: 35px 25px;
+            border: 2px solid #ffb800;
+            border-radius: 15px;
+            background: rgba(40, 25, 0, 0.8);
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 0 12px rgba(255, 184, 0, 0.25);
+        }
+
+        .scp-card:hover {
+            transform: translateY(-8px);
+            background: rgba(90, 60, 0, 0.9);
+            box-shadow: 0 0 25px rgba(255, 184, 0, 0.7);
+        }
+
+        .scp-card h2 {
+            color: #ffb800;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .scp-card p {
+            font-size: 17px;
+            color: #eeeeee;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 45px;
+            padding: 15px 28px;
+            border-radius: 8px;
+            background: #ffb800;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back:hover {
+            background: #ffd166;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 900px) {
+            .scp-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 38px;
+            }
+
+            .scp-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>SCP-EUCLID</h1>
+
+    <p class="subtitle">
+        Accès aux dossiers des objets et anomalies SCP classés Euclid
+    </p>
+
+    <div class="scp-container">
+
+        <!-- SCP-006-FR -->
+        <a href="scp-006-fr.html" class="scp-card">
+            <h2>SCP-006-FR</h2>
+            <p>Accéder au dossier SCP-006-FR</p>
+        </a>
+
+        <!-- SCP-008 -->
+        <a href="scp-008.html" class="scp-card">
+            <h2>SCP-008</h2>
+            <p>Accéder au dossier SCP-008</p>
+        </a>
+
+        <!-- SCP-049 -->
+        <a href="scp-049.html" class="scp-card">
+            <h2>SCP-049</h2>
+            <p>Accéder au dossier SCP-049</p>
+        </a>
+
+        <!-- SCP-173 -->
+        <a href="scp-173.html" class="scp-card">
+            <h2>SCP-173</h2>
+            <p>Accéder au dossier SCP-173</p>
+        </a>
+
+        <!-- SCP-294 -->
+        <a href="scp-294.html" class="scp-card">
+            <h2>SCP-294</h2>
+            <p>Accéder au dossier SCP-294</p>
+        </a>
+
+        <!-- SCP-527 -->
+        <a href="scp-527.html" class="scp-card">
+            <h2>SCP-527</h2>
+            <p>Accéder au dossier SCP-527</p>
+        </a>
+
+        <!-- SCP-547 -->
+        <a href="scp-547.html" class="scp-card">
+            <h2>SCP-547</h2>
+            <p>Accéder au dossier SCP-547</p>
+        </a>
+
+    </div>
+
+    <a href="index.html" class="back">
+        Retour à l'accueil
+    </a>
+
+</body>
+</html>
