@@ -1,165 +1,98 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-classe="keter">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dossiers d'intervention P.I.N.S. pour les anomalies de classe Keter.">
 
-    <title>SCP-KETER - Dossiers SCP</title>
+    <title>SCP Keter — P.I.N.S.</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            min-height: 100vh;
-            font-family: Arial, sans-serif;
-            color: white;
-            background:
-                radial-gradient(
-                    circle at center,
-                    rgba(90, 0, 0, 0.45),
-                    #060202 70%
-                );
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        h1 {
-            font-size: 52px;
-            margin-bottom: 15px;
-            color: white;
-            text-shadow: 0 0 15px #ff3b3b;
-        }
-
-        .subtitle {
-            font-size: 20px;
-            color: #ffaaaa;
-            margin-bottom: 45px;
-        }
-
-        .scp-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .scp-card {
-            display: block;
-            padding: 35px 25px;
-            border: 2px solid #ff3b3b;
-            border-radius: 15px;
-            background: rgba(40, 0, 0, 0.8);
-            color: white;
-            text-decoration: none;
-            transition: 0.3s;
-            box-shadow: 0 0 12px rgba(255, 59, 59, 0.25);
-        }
-
-        .scp-card:hover {
-            transform: translateY(-8px);
-            background: rgba(90, 0, 0, 0.9);
-            box-shadow: 0 0 25px rgba(255, 59, 59, 0.7);
-        }
-
-        .scp-card h2 {
-            color: #ff3b3b;
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-
-        .scp-card p {
-            font-size: 17px;
-            color: #eeeeee;
-        }
-
-        .empty-message {
-            color: #ffaaaa;
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        .back {
-            display: inline-block;
-            margin-top: 45px;
-            padding: 15px 28px;
-            border-radius: 8px;
-            background: #ff3b3b;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .back:hover {
-            background: #ff7a7a;
-            transform: scale(1.05);
-        }
-
-        @media (max-width: 900px) {
-            .scp-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 38px;
-            }
-
-            .scp-container {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
 
-    <h1>SCP-KETER</h1>
+    <header class="site-header">
+        <div class="wrap">
 
-    <p class="subtitle">
-        Accès aux dossiers des objets et anomalies SCP classés Keter
-    </p>
+            <a href="index.html" class="brand">
+                <span class="brand-mark" aria-hidden="true">P</span>
+                <span class="brand-name">P.I.N.S.</span>
+            </a>
 
-    <!-- Aucun SCP ajouté pour l'instant.
-         Pour ajouter une carte, copie ce bloc et remplace XXX par le numéro du SCP :
+            <nav class="nav" aria-label="Navigation principale">
+                <a href="index.html">Accueil</a>
+                <a href="scp-safe.html">SCP Safe</a>
+                <a href="scp-euclid.html">SCP Euclid</a>
+                <a href="scp-keter.html" aria-current="page">SCP Keter</a>
+            </nav>
 
-    <a href="scp-XXX.html" class="scp-card">
-        <h2>SCP-XXX</h2>
-        <p>Accéder au dossier SCP-XXX</p>
-    </a>
-    -->
+        </div>
+    </header>
 
-    <div class="scp-container">
+    <main>
+        <div class="wrap">
 
-        <!-- SCP-682 -->
-        <a href="scp-682.html" class="scp-card">
-            <h2>SCP-682</h2>
-            <p>Accéder au dossier SCP-682</p>
-        </a>
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <a href="index.html">Accueil</a>
+                <span aria-hidden="true">/</span>
+                <span>SCP Keter</span>
+            </nav>
 
-        <!-- SCP-939 -->
-        <a href="scp-939.html" class="scp-card">
-            <h2>SCP-939</h2>
-            <p>Accéder au dossier SCP-939</p>
-        </a>
+            <div class="page-head">
+                <p class="eyebrow">Classe d'objet · Keter</p>
+                <h1>SCP Keter</h1>
+                <p class="lede">Confinement difficile ou instable. Toute intervention est considérée comme une opération à haut risque.</p>
+                <p class="lede">
+                    <strong>3</strong> dossiers référencés,
+                    dont <strong>0</strong> rédigé.
+                </p>
+            </div>
 
-        <!-- SCP-3199 -->
-        <a href="scp-3199.html" class="scp-card">
-            <h2>SCP-3199</h2>
-            <p>Accéder au dossier SCP-3199</p>
-        </a>
+            <div class="scp-grid">
 
-    </div>
+                <a href="scp-682.html" class="scp-card">
+                    <span class="id">SCP-682</span>
+                    <span class="status">Dossier en cours de rédaction</span>
+                    <span class="go">Consulter <span aria-hidden="true">&rarr;</span></span>
+                </a>
 
-    <a href="index.html" class="back">
-        Retour à l'accueil
-    </a>
+                <a href="scp-939.html" class="scp-card">
+                    <span class="id">SCP-939</span>
+                    <span class="status">Dossier en cours de rédaction</span>
+                    <span class="go">Consulter <span aria-hidden="true">&rarr;</span></span>
+                </a>
+
+                <a href="scp-3199.html" class="scp-card">
+                    <span class="id">SCP-3199</span>
+                    <span class="status">Dossier en cours de rédaction</span>
+                    <span class="go">Consulter <span aria-hidden="true">&rarr;</span></span>
+                </a>
+
+            </div>
+
+            <div class="actions">
+                <a href="index.html" class="btn ghost">
+                    <span aria-hidden="true">&larr;</span> Retour à l'accueil
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>P.I.N.S. — Protocole d'Intervention NRBC Spécialisé</span>
+            <span>Document interne · Diffusion restreinte</span>
+        </div>
+    </footer>
 
 </body>
+
 </html>

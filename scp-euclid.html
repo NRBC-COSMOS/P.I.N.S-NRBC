@@ -1,168 +1,116 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-classe="euclid">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dossiers d'intervention P.I.N.S. pour les anomalies de classe Euclid.">
 
-    <title>SCP-EUCLID - Dossiers SCP</title>
+    <title>SCP Euclid — P.I.N.S.</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            min-height: 100vh;
-            font-family: Arial, sans-serif;
-            color: white;
-            background:
-                radial-gradient(
-                    circle at center,
-                    rgba(80, 60, 0, 0.45),
-                    #060502 70%
-                );
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        h1 {
-            font-size: 52px;
-            margin-bottom: 15px;
-            color: white;
-            text-shadow: 0 0 15px #ffb800;
-        }
-
-        .subtitle {
-            font-size: 20px;
-            color: #ffdd99;
-            margin-bottom: 45px;
-        }
-
-        .scp-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .scp-card {
-            display: block;
-            padding: 35px 25px;
-            border: 2px solid #ffb800;
-            border-radius: 15px;
-            background: rgba(40, 25, 0, 0.8);
-            color: white;
-            text-decoration: none;
-            transition: 0.3s;
-            box-shadow: 0 0 12px rgba(255, 184, 0, 0.25);
-        }
-
-        .scp-card:hover {
-            transform: translateY(-8px);
-            background: rgba(90, 60, 0, 0.9);
-            box-shadow: 0 0 25px rgba(255, 184, 0, 0.7);
-        }
-
-        .scp-card h2 {
-            color: #ffb800;
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-
-        .scp-card p {
-            font-size: 17px;
-            color: #eeeeee;
-        }
-
-        .back {
-            display: inline-block;
-            margin-top: 45px;
-            padding: 15px 28px;
-            border-radius: 8px;
-            background: #ffb800;
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .back:hover {
-            background: #ffd166;
-            transform: scale(1.05);
-        }
-
-        @media (max-width: 900px) {
-            .scp-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 38px;
-            }
-
-            .scp-container {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
 
-    <h1>SCP-EUCLID</h1>
+    <header class="site-header">
+        <div class="wrap">
 
-    <p class="subtitle">
-        Accès aux dossiers des objets et anomalies SCP classés Euclid
-    </p>
+            <a href="index.html" class="brand">
+                <span class="brand-mark" aria-hidden="true">P</span>
+                <span class="brand-name">P.I.N.S.</span>
+            </a>
 
-    <div class="scp-container">
+            <nav class="nav" aria-label="Navigation principale">
+                <a href="index.html">Accueil</a>
+                <a href="scp-safe.html">SCP Safe</a>
+                <a href="scp-euclid.html" aria-current="page">SCP Euclid</a>
+                <a href="scp-keter.html">SCP Keter</a>
+            </nav>
 
-        <!-- SCP-006-FR -->
-        <a href="scp-006-fr.html" class="scp-card">
-            <h2>SCP-006-FR</h2>
-            <p>Accéder au dossier SCP-006-FR</p>
-        </a>
+        </div>
+    </header>
 
-        <!-- SCP-008 -->
-        <a href="scp-008.html" class="scp-card">
-            <h2>SCP-008</h2>
-            <p>Accéder au dossier SCP-008</p>
-        </a>
+    <main>
+        <div class="wrap">
 
-        <!-- SCP-049 -->
-        <a href="scp-049.html" class="scp-card">
-            <h2>SCP-049</h2>
-            <p>Accéder au dossier SCP-049</p>
-        </a>
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <a href="index.html">Accueil</a>
+                <span aria-hidden="true">/</span>
+                <span>SCP Euclid</span>
+            </nav>
 
-        <!-- SCP-173 -->
-        <a href="scp-173.html" class="scp-card">
-            <h2>SCP-173</h2>
-            <p>Accéder au dossier SCP-173</p>
-        </a>
+            <div class="page-head">
+                <p class="eyebrow">Classe d'objet · Euclid</p>
+                <h1>SCP Euclid</h1>
+                <p class="lede">Comportement imprévisible ou mal compris. L'intervention exige une équipe complète et une surveillance constante.</p>
+                <p class="lede">
+                    <strong>6</strong> dossiers référencés,
+                    dont <strong>0</strong> rédigé.
+                </p>
+            </div>
 
-        <!-- SCP-294 -->
-        <a href="scp-294.html" class="scp-card">
-            <h2>SCP-294</h2>
-            <p>Accéder au dossier SCP-294</p>
-        </a>
+            <div class="scp-grid">
 
-        <!-- SCP-527 -->
-        <a href="scp-527.html" class="scp-card">
-            <h2>SCP-527</h2>
-            <p>Accéder au dossier SCP-527</p>
-        </a>
+                <a href="scp-006-fr.html" class="scp-card">
+                    <span class="id">SCP-006-FR</span>
+                    <span class="status">Dossier en cours de rédaction</span>
+                    <span class="go">Consulter <span aria-hidden="true">&rarr;</span></span>
+                </a>
 
-    </div>
+                <a href="scp-008.html" class="scp-card">
+                    <span class="id">SCP-008</span>
+                    <span class="status">Dossier en cours de rédaction</span>
+                    <span class="go">Consulter <span aria-hidden="true">&rarr;</span></span>
+                </a>
 
-    <a href="index.html" class="back">
-        Retour à l'accueil
-    </a>
+                <a href="scp-049.html" class="scp-card">
+                    <span class="id">SCP-049</span>
+                    <span class="status">Dossier en cours de rédaction</span>
+                    <span class="go">Consulter <span aria-hidden="true">&rarr;</span></span>
+                </a>
+
+                <a href="scp-173.html" class="scp-card">
+                    <span class="id">SCP-173</span>
+                    <span class="status">Dossier en cours de rédaction</span>
+                    <span class="go">Consulter <span aria-hidden="true">&rarr;</span></span>
+                </a>
+
+                <a href="scp-294.html" class="scp-card">
+                    <span class="id">SCP-294</span>
+                    <span class="status">Dossier en cours de rédaction</span>
+                    <span class="go">Consulter <span aria-hidden="true">&rarr;</span></span>
+                </a>
+
+                <a href="scp-527.html" class="scp-card">
+                    <span class="id">SCP-527</span>
+                    <span class="status">Dossier en cours de rédaction</span>
+                    <span class="go">Consulter <span aria-hidden="true">&rarr;</span></span>
+                </a>
+
+            </div>
+
+            <div class="actions">
+                <a href="index.html" class="btn ghost">
+                    <span aria-hidden="true">&larr;</span> Retour à l'accueil
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>P.I.N.S. — Protocole d'Intervention NRBC Spécialisé</span>
+            <span>Document interne · Diffusion restreinte</span>
+        </div>
+    </footer>
 
 </body>
+
 </html>

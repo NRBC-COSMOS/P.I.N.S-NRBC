@@ -1,117 +1,103 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-classe="safe">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dossier d'intervention P.I.N.S. pour SCP-038, anomalie de classe Safe.">
 
-    <title>SCP-038 - Dossier SCP</title>
+    <title>SCP-038 — Dossier P.I.N.S.</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            min-height: 100vh;
-            font-family: Arial, sans-serif;
-            color: white;
-            background:
-                radial-gradient(
-                    circle at center,
-                    rgba(0, 80, 20, 0.45),
-                    #020606 70%
-                );
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        h1 {
-            font-size: 48px;
-            margin-bottom: 15px;
-            color: white;
-            text-shadow: 0 0 15px #7cff00;
-        }
-
-        .subtitle {
-            font-size: 18px;
-            color: #baff80;
-            margin-bottom: 45px;
-        }
-
-        .content-box {
-            max-width: 800px;
-            margin: 0 auto 40px auto;
-            padding: 35px;
-            border: 2px solid #7cff00;
-            border-radius: 15px;
-            background: rgba(0, 30, 10, 0.8);
-            text-align: left;
-            box-shadow: 0 0 12px rgba(124, 255, 0, 0.25);
-        }
-
-        .content-box p {
-            color: #cccccc;
-            line-height: 1.6;
-        }
-
-        .content-box .field-label {
-            font-weight: bold;
-            color: #ffffff;
-            margin-top: 20px;
-            margin-bottom: 6px;
-        }
-
-        .content-box .field-label:first-child {
-            margin-top: 0;
-        }
-
-        .content-box .field-value {
-            margin-bottom: 6px;
-        }
-
-        .back {
-            display: inline-block;
-            margin-top: 10px;
-            margin-right: 20px;
-            padding: 15px 28px;
-            border-radius: 8px;
-            background: #7cff00;
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .back:hover {
-            background: #b5ff66;
-            transform: scale(1.05);
-        }
-    </style>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
 
-    <h1>SCP-038</h1>
+    <header class="site-header">
+        <div class="wrap">
 
-    <p class="subtitle">Dossier en cours de rédaction</p>
+            <a href="index.html" class="brand">
+                <span class="brand-mark" aria-hidden="true">P</span>
+                <span class="brand-name">P.I.N.S.</span>
+            </a>
 
-    <div class="content-box">
+            <nav class="nav" aria-label="Navigation principale">
+                <a href="index.html">Accueil</a>
+                <a href="scp-safe.html" aria-current="page">SCP Safe</a>
+                <a href="scp-euclid.html">SCP Euclid</a>
+                <a href="scp-keter.html">SCP Keter</a>
+            </nav>
 
-        <p class="field-label">Personnel nécessaire :</p>
-        <p class="field-value">...</p>
+        </div>
+    </header>
 
-        <p class="field-label">But du P.I.N.S :</p>
-        <p class="field-value">...</p>
+    <main>
+        <div class="wrap">
 
-        <p class="field-label">Ce qui faut faire :</p>
-        <p class="field-value">...</p>
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <a href="index.html">Accueil</a>
+                <span aria-hidden="true">/</span>
+                <a href="scp-safe.html">SCP Safe</a>
+                <span aria-hidden="true">/</span>
+                <span>SCP-038</span>
+            </nav>
 
-    </div>
+            <div class="page-head">
+                <p class="eyebrow">Dossier d'intervention</p>
+                <h1>SCP-038</h1>
+                <p class="lede">Dossier en cours de rédaction.</p>
+            </div>
 
-    <a href="scp-safe.html" class="back">Retour aux SCP-Safe</a>
-    <a href="index.html" class="back">Retour à l'accueil</a>
+            <article class="dossier">
+
+                <div class="dossier-head">
+                    <span class="badge">Classe Safe</span>
+                    <span>Référence · SCP-038</span>
+                </div>
+
+                <dl class="fields">
+
+                    <div class="field">
+                        <dt>Personnel nécessaire</dt>
+                        <dd class="empty">Non renseigné.</dd>
+                    </div>
+
+                    <div class="field">
+                        <dt>But du P.I.N.S.</dt>
+                        <dd class="empty">Non renseigné.</dd>
+                    </div>
+
+                    <div class="field">
+                        <dt>Procédure à suivre</dt>
+                        <dd class="empty">Non renseigné.</dd>
+                    </div>
+
+                </dl>
+
+            </article>
+
+            <div class="actions">
+                <a href="scp-safe.html" class="btn">
+                    <span aria-hidden="true">&larr;</span> Retour aux SCP Safe
+                </a>
+                <a href="index.html" class="btn ghost">Retour à l'accueil</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>P.I.N.S. — Protocole d'Intervention NRBC Spécialisé</span>
+            <span>Document interne · Diffusion restreinte</span>
+        </div>
+    </footer>
 
 </body>
+
 </html>

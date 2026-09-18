@@ -2,321 +2,96 @@
 <html lang="fr">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site des P.I.N.S. — Protocole d'Intervention NRBC Spécialisé. Dossiers d'intervention classés par classe d'objet SCP.">
 
     <title>Site des P.I.N.S.</title>
 
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-
-            font-family: Arial, sans-serif;
-
-            background: #020809;
-
-            color: white;
-
-            min-height: 100vh;
-
-            overflow-x: hidden;
-
-        }
-
-        body::before {
-
-            content: "";
-
-            position: fixed;
-
-            inset: 0;
-
-            background:
-
-                radial-gradient(
-                    ellipse at 0% 70%,
-                    rgba(40, 150, 0, 0.35),
-                    transparent 45%
-                ),
-
-                radial-gradient(
-                    ellipse at 100% 70%,
-                    rgba(40, 150, 0, 0.35),
-                    transparent 45%
-                );
-
-            z-index: -1;
-
-        }
-
-        main {
-
-            text-align: center;
-
-            padding: 100px 20px 60px 20px;
-
-            min-height: 100vh;
-
-            display: flex;
-
-            flex-direction: column;
-
-            justify-content: center;
-
-            align-items: center;
-
-        }
-
-        h1 {
-
-            font-size: clamp(38px, 5vw, 70px);
-
-            line-height: 1.2;
-
-            margin-bottom: 55px;
-
-        }
-
-        h1 span {
-
-            color: #9cff00;
-
-            text-shadow: 0 0 15px #9cff00;
-
-        }
-
-        .separator {
-
-            width: 215px;
-
-            height: 4px;
-
-            background: #9cff00;
-
-            margin-bottom: 55px;
-
-            box-shadow: 0 0 15px #9cff00;
-
-        }
-
-        h2 {
-
-            color: #9cff00;
-
-            font-size: clamp(23px, 3vw, 35px);
-
-            margin-bottom: 30px;
-
-        }
-
-        .description {
-
-            font-size: 25px;
-
-            color: #eeeeee;
-
-            margin-bottom: 12px;
-
-        }
-
-        .definition {
-
-            font-size: clamp(20px, 2.5vw, 30px);
-
-            font-weight: bold;
-
-        }
-
-        .buttons {
-
-            position: fixed;
-
-            top: 20px;
-
-            right: 20px;
-
-            display: flex;
-
-            flex-wrap: wrap;
-
-            justify-content: flex-end;
-
-            gap: 12px;
-
-            z-index: 10;
-
-        }
-
-        .back {
-
-            display: inline-block;
-
-            padding: 10px 18px;
-
-            font-size: 14px;
-
-            background: #9cff00;
-
-            color: #071000;
-
-            text-decoration: none;
-
-            border-radius: 8px;
-
-            font-weight: bold;
-
-            transition: 0.3s;
-
-        }
-
-        .back:hover {
-
-            background: #c4ff66;
-
-        }
-
-        .back.euclid {
-
-            background: #ffb800;
-
-        }
-
-        .back.euclid:hover {
-
-            background: #ffd166;
-
-        }
-
-        .back.keter {
-
-            background: #ff3b3b;
-
-            color: white;
-
-        }
-
-        .back.keter:hover {
-
-            background: #ff7a7a;
-
-        }
-
-        @media (max-width: 600px) {
-
-            .buttons {
-
-                position: static;
-
-                justify-content: center;
-
-                margin-top: 35px;
-
-                margin-bottom: 20px;
-
-            }
-
-            main {
-
-                padding: 40px 20px;
-
-            }
-
-            h1 {
-
-                margin-bottom: 35px;
-
-            }
-
-            .separator {
-
-                margin-bottom: 35px;
-
-            }
-
-            h2 {
-
-                font-size: 22px;
-
-            }
-
-            .description {
-
-                font-size: 18px;
-
-            }
-
-            .definition {
-
-                font-size: 19px;
-
-            }
-
-        }
-
-    </style>
-
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
 
-    <main>
+    <header class="site-header">
+        <div class="wrap">
 
-        <h1>
-
-            Bienvenue sur le Site
-
-            <br>
-
-            des <span>P.I.N.S.</span> !
-
-        </h1>
-
-        <div class="separator"></div>
-
-        <h2>
-
-            D'abord, que veut dire P.I.N.S. ?
-
-        </h2>
-
-        <p class="description">
-
-            P.I.N.S. signifie
-
-        </p>
-
-        <p class="definition">
-
-            Protocole d’Intervention NRBC Spécialisé.
-
-        </p>
-
-        <div class="buttons">
-
-            <a href="scp-safe.html" class="back">
-                Accéder aux SCP-Safe
+            <a href="index.html" class="brand">
+                <span class="brand-mark" aria-hidden="true">P</span>
+                <span class="brand-name">P.I.N.S.</span>
             </a>
 
-            <a href="scp-euclid.html" class="back euclid">
-                Accéder aux SCP-Euclid
-            </a>
-
-            <a href="scp-keter.html" class="back keter">
-                Accéder aux SCP-Keter
-            </a>
+            <nav class="nav" aria-label="Navigation principale">
+                <a href="index.html" aria-current="page">Accueil</a>
+                <a href="scp-safe.html">SCP Safe</a>
+                <a href="scp-euclid.html">SCP Euclid</a>
+                <a href="scp-keter.html">SCP Keter</a>
+            </nav>
 
         </div>
+    </header>
 
+    <main>
+        <div class="wrap hero">
+
+            <p class="eyebrow">Base de données opérationnelle</p>
+
+            <h1>
+                Bienvenue sur le site
+                <br>
+                des <span class="accent">P.I.N.S.</span>
+            </h1>
+
+            <div class="rule"></div>
+
+            <p class="lede">P.I.N.S. signifie</p>
+            <p class="definition">Protocole d'Intervention NRBC Spécialisé</p>
+
+            <div class="class-grid">
+
+                <a href="scp-safe.html" class="class-card" data-classe="safe">
+                    <h2>SCP Safe</h2>
+                    <p>
+                        Anomalies confinées de façon fiable. Procédures
+                        d'intervention standard, risque NRBC maîtrisé.
+                    </p>
+                    <span class="count">4 dossiers</span>
+                </a>
+
+                <a href="scp-euclid.html" class="class-card" data-classe="euclid">
+                    <h2>SCP Euclid</h2>
+                    <p>
+                        Comportement imprévisible ou mal compris. L'intervention
+                        exige une équipe complète et une surveillance constante.
+                    </p>
+                    <span class="count">6 dossiers</span>
+                </a>
+
+                <a href="scp-keter.html" class="class-card" data-classe="keter">
+                    <h2>SCP Keter</h2>
+                    <p>
+                        Confinement difficile ou instable. Toute intervention est
+                        considérée comme une opération à haut risque.
+                    </p>
+                    <span class="count">3 dossiers</span>
+                </a>
+
+            </div>
+
+        </div>
     </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>P.I.N.S. — Protocole d'Intervention NRBC Spécialisé</span>
+            <span>Document interne · Diffusion restreinte</span>
+        </div>
+    </footer>
 
 </body>
 
