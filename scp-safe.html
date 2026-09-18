@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>SCP-Safe</title>
+    <title>SCP-SAFE - Dossiers SCP</title>
 
     <style>
-
         * {
             margin: 0;
             padding: 0;
@@ -19,235 +14,137 @@
         }
 
         body {
-
-            font-family: Arial, sans-serif;
-
-            background: #020809;
-
-            color: white;
-
             min-height: 100vh;
-
-        }
-
-        body::before {
-
-            content: "";
-
-            position: fixed;
-
-            inset: 0;
-
+            font-family: Arial, sans-serif;
+            color: white;
             background:
-
                 radial-gradient(
-                    ellipse at 0% 70%,
-                    rgba(40, 150, 0, 0.30),
-                    transparent 45%
-                ),
-
-                radial-gradient(
-                    ellipse at 100% 70%,
-                    rgba(40, 150, 0, 0.30),
-                    transparent 45%
+                    circle at center,
+                    rgba(0, 80, 20, 0.45),
+                    #020606 70%
                 );
-
-            z-index: -1;
-
-        }
-
-        header {
-
-            padding: 30px;
-
             text-align: center;
-
-            border-bottom: 1px solid #28451b;
-
+            padding: 50px 20px;
         }
 
-        header h1 {
-
-            color: #9cff00;
-
-            font-size: 40px;
-
-            text-shadow: 0 0 15px #9cff00;
-
+        h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+            color: white;
+            text-shadow: 0 0 15px #7cff00;
         }
 
-        main {
-
-            max-width: 1000px;
-
-            margin: auto;
-
-            padding: 60px 20px;
-
-            text-align: center;
-
+        .subtitle {
+            font-size: 20px;
+            color: #baff80;
+            margin-bottom: 45px;
         }
 
-        h2 {
-
-            color: #9cff00;
-
-            margin-bottom: 35px;
-
-            font-size: 32px;
-
-        }
-
-        .scp-list {
-
+        .scp-container {
             display: grid;
-
-            grid-template-columns:
-
-                repeat(auto-fit, minmax(220px, 1fr));
-
+            grid-template-columns: repeat(2, 1fr);
             gap: 25px;
-
+            max-width: 1000px;
+            margin: auto;
         }
 
         .scp-card {
-
-            background: rgba(10, 25, 15, 0.9);
-
-            border: 1px solid #426b24;
-
-            border-radius: 12px;
-
-            padding: 30px;
-
-            text-decoration: none;
-
+            display: block;
+            padding: 35px 25px;
+            border: 2px solid #7cff00;
+            border-radius: 15px;
+            background: rgba(0, 30, 10, 0.8);
             color: white;
-
+            text-decoration: none;
             transition: 0.3s;
-
+            box-shadow: 0 0 12px rgba(124, 255, 0, 0.25);
         }
 
         .scp-card:hover {
-
-            transform: translateY(-5px);
-
-            border-color: #9cff00;
-
-            box-shadow: 0 0 20px rgba(156, 255, 0, 0.3);
-
+            transform: translateY(-8px);
+            background: rgba(40, 90, 10, 0.9);
+            box-shadow: 0 0 25px rgba(124, 255, 0, 0.7);
         }
 
-        .scp-card h3 {
-
-            color: #9cff00;
-
+        .scp-card h2 {
+            color: #8cff00;
+            font-size: 28px;
             margin-bottom: 15px;
-
         }
 
         .scp-card p {
-
-            color: #cccccc;
-
+            font-size: 17px;
+            color: #eeeeee;
         }
 
         .back {
-
             display: inline-block;
-
-            margin-top: 40px;
-
-            padding: 15px 30px;
-
-            background: #9cff00;
-
-            color: #071000;
-
-            text-decoration: none;
-
+            margin-top: 45px;
+            padding: 15px 28px;
             border-radius: 8px;
-
+            background: #7cff00;
+            color: black;
+            text-decoration: none;
             font-weight: bold;
-
+            transition: 0.3s;
         }
 
-    </style>
+        .back:hover {
+            background: #b5ff66;
+            transform: scale(1.05);
+        }
 
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 38px;
+            }
+
+            .scp-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
+    <h1>SCP-SAFE</h1>
 
-        <h1>SCP-Safe</h1>
-
-    </header>
-
-    <main>
-
-        <h2>Base de données SCP</h2>
-
-        <div class="scp-list">
-
-            <a href="scp-024-fr.html" class="scp-card">
-
-                <h3>SCP-024-FR</h3>
-
-                <p>
-
-                    Accéder au dossier SCP-024-FR
-
-                </p>
-
-            </a>
-
-            <a href="scp-038.html" class="scp-card">
-
-                <h3>SCP-038</h3>
-
-                <p>
-
-                    Accéder au dossier SCP-038
-
-                </p>
-
-            </a>
-<!-- SCP-524 -->
-
-<a href="scp-524.html" class="scp-card">
-
-    <h3>SCP-524</h3>
-
-    <p>
-
-        Accéder au dossier SCP-524
-
+    <p class="subtitle">
+        Accès aux dossiers des objets et anomalies SCP
     </p>
 
-</a>
-            <a href="scp-914.html" class="scp-card">
+    <div class="scp-container">
 
-                <h3>SCP-914</h3>
-
-                <p>
-
-                    Accéder au dossier SCP-914
-
-                </p>
-
-            </a>
-
-        </div>
-
-        <a href="index.html" class="back">
-
-            Retour à l'accueil
-
+        <!-- SCP-024-FR -->
+        <a href="scp-024-fr.html" class="scp-card">
+            <h2>SCP-024-FR</h2>
+            <p>Accéder au dossier SCP-024-FR</p>
         </a>
 
-    </main>
+        <!-- SCP-038 -->
+        <a href="scp-038.html" class="scp-card">
+            <h2>SCP-038</h2>
+            <p>Accéder au dossier SCP-038</p>
+        </a>
+
+        <!-- SCP-524 -->
+        <a href="scp-524.html" class="scp-card">
+            <h2>SCP-524</h2>
+            <p>Accéder au dossier SCP-524</p>
+        </a>
+
+        <!-- SCP-914 -->
+        <a href="scp-914.html" class="scp-card">
+            <h2>SCP-914</h2>
+            <p>Accéder au dossier SCP-914</p>
+        </a>
+
+    </div>
+
+    <a href="index.html" class="back">
+        Retour à l’accueil
+    </a>
 
 </body>
-
 </html>
