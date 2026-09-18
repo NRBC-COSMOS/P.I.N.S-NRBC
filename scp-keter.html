@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SCP-KETER - Dossiers SCP</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(90, 0, 0, 0.45),
+                    #060202 70%
+                );
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+            color: white;
+            text-shadow: 0 0 15px #ff3b3b;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #ffaaaa;
+            margin-bottom: 45px;
+        }
+
+        .scp-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .scp-card {
+            display: block;
+            padding: 35px 25px;
+            border: 2px solid #ff3b3b;
+            border-radius: 15px;
+            background: rgba(40, 0, 0, 0.8);
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 0 12px rgba(255, 59, 59, 0.25);
+        }
+
+        .scp-card:hover {
+            transform: translateY(-8px);
+            background: rgba(90, 0, 0, 0.9);
+            box-shadow: 0 0 25px rgba(255, 59, 59, 0.7);
+        }
+
+        .scp-card h2 {
+            color: #ff3b3b;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .scp-card p {
+            font-size: 17px;
+            color: #eeeeee;
+        }
+
+        .empty-message {
+            color: #ffaaaa;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 45px;
+            padding: 15px 28px;
+            border-radius: 8px;
+            background: #ff3b3b;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back:hover {
+            background: #ff7a7a;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 900px) {
+            .scp-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 38px;
+            }
+
+            .scp-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>SCP-KETER</h1>
+
+    <p class="subtitle">
+        Accès aux dossiers des objets et anomalies SCP classés Keter
+    </p>
+
+    <!-- Aucun SCP ajouté pour l'instant.
+         Pour ajouter une carte, copie ce bloc et remplace XXX par le numéro du SCP :
+
+    <a href="scp-XXX.html" class="scp-card">
+        <h2>SCP-XXX</h2>
+        <p>Accéder au dossier SCP-XXX</p>
+    </a>
+    -->
+
+    <div class="scp-container">
+
+    </div>
+
+    <p class="empty-message">Aucun dossier ajouté pour le moment.</p>
+
+    <a href="index.html" class="back">
+        Retour à l'accueil
+    </a>
+
+</body>
+</html>
