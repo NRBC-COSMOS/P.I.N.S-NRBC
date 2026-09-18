@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Site des P.I.N.S.</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background: #020809;
+
+            color: white;
+
+            min-height: 100vh;
+
+            overflow-x: hidden;
+
+        }
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: 0;
+
+            background:
+
+                radial-gradient(
+                    ellipse at 0% 70%,
+                    rgba(40, 150, 0, 0.35),
+                    transparent 45%
+                ),
+
+                radial-gradient(
+                    ellipse at 100% 70%,
+                    rgba(40, 150, 0, 0.35),
+                    transparent 45%
+                );
+
+            z-index: -1;
+
+        }
+
+        main {
+
+            text-align: center;
+
+            padding: 60px 20px;
+
+            min-height: 100vh;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+        }
+
+        h1 {
+
+            font-size: clamp(38px, 5vw, 70px);
+
+            line-height: 1.2;
+
+            margin-bottom: 55px;
+
+        }
+
+        h1 span {
+
+            color: #9cff00;
+
+            text-shadow: 0 0 15px #9cff00;
+
+        }
+
+        .separator {
+
+            width: 215px;
+
+            height: 4px;
+
+            background: #9cff00;
+
+            margin-bottom: 55px;
+
+            box-shadow: 0 0 15px #9cff00;
+
+        }
+
+        h2 {
+
+            color: #9cff00;
+
+            font-size: clamp(23px, 3vw, 35px);
+
+            margin-bottom: 30px;
+
+        }
+
+        .description {
+
+            font-size: 25px;
+
+            color: #eeeeee;
+
+            margin-bottom: 12px;
+
+        }
+
+        .definition {
+
+            font-size: clamp(20px, 2.5vw, 30px);
+
+            font-weight: bold;
+
+        }
+
+        .back {
+
+            display: inline-block;
+
+            margin-top: 45px;
+
+            padding: 15px 30px;
+
+            background: #9cff00;
+
+            color: #071000;
+
+            text-decoration: none;
+
+            border-radius: 8px;
+
+            font-weight: bold;
+
+        }
+
+        .back:hover {
+
+            background: #c4ff66;
+
+        }
+
+        @media (max-width: 600px) {
+
+            main {
+
+                padding: 40px 20px;
+
+            }
+
+            h1 {
+
+                margin-bottom: 35px;
+
+            }
+
+            .separator {
+
+                margin-bottom: 35px;
+
+            }
+
+            h2 {
+
+                font-size: 22px;
+
+            }
+
+            .description {
+
+                font-size: 18px;
+
+            }
+
+            .definition {
+
+                font-size: 19px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+
+        <h1>
+
+            Bienvenue sur le Site
+
+            <br>
+
+            des <span>P.I.N.S.</span> !
+
+        </h1>
+
+        <div class="separator"></div>
+
+        <h2>
+
+            D'abord, que veut dire P.I.N.S. ?
+
+        </h2>
+
+        <p class="description">
+
+            P.I.N.S. signifie
+
+        </p>
+
+        <p class="definition">
+
+            Protocole d’Intervention NRBC Spécialisé.
+
+        </p>
+
+        <a href="scp-safe.html" class="back">
+
+            Accéder à SCP-Safe
+
+        </a>
+
+    </main>
+
+</body>
+
+</html>
