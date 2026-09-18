@@ -1,115 +1,117 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>SCP-038 - SCP-Safe</title>
+    <title>SCP-038 - Dossier SCP</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
-
-            margin: 0;
-
+            min-height: 100vh;
             font-family: Arial, sans-serif;
-
-            background: #020809;
-
             color: white;
-
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(0, 80, 20, 0.45),
+                    #020606 70%
+                );
             text-align: center;
-
-            padding: 40px 20px;
-
+            padding: 50px 20px;
         }
 
         h1 {
-
-            color: #9cff00;
-
-            text-shadow: 0 0 15px #9cff00;
-
+            font-size: 48px;
+            margin-bottom: 15px;
+            color: white;
+            text-shadow: 0 0 15px #7cff00;
         }
 
-        h2 {
-
-            color: #9cff00;
-
-            margin-top: 50px;
-
-        }
-
-        p {
-
+        .subtitle {
             font-size: 18px;
+            color: #baff80;
+            margin-bottom: 45px;
+        }
 
-            line-height: 1.7;
+        .content-box {
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            padding: 35px;
+            border: 2px solid #7cff00;
+            border-radius: 15px;
+            background: rgba(0, 30, 10, 0.8);
+            text-align: left;
+            box-shadow: 0 0 12px rgba(124, 255, 0, 0.25);
+        }
 
-            color: #dddddd;
+        .content-box p {
+            color: #cccccc;
+            line-height: 1.6;
+        }
 
+        .content-box .field-label {
+            font-weight: bold;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 6px;
+        }
+
+        .content-box .field-label:first-child {
+            margin-top: 0;
+        }
+
+        .content-box .field-value {
+            margin-bottom: 6px;
         }
 
         .back {
-
             display: inline-block;
-
-            margin-top: 30px;
-
-            padding: 15px 30px;
-
-            background: #9cff00;
-
-            color: #071000;
-
-            text-decoration: none;
-
+            margin-top: 10px;
+            margin-right: 20px;
+            padding: 15px 28px;
             border-radius: 8px;
-
+            background: #7cff00;
+            color: black;
+            text-decoration: none;
             font-weight: bold;
-
+            transition: 0.3s;
         }
 
+        .back:hover {
+            background: #b5ff66;
+            transform: scale(1.05);
+        }
     </style>
-
 </head>
 
 <body>
 
-    <h1>SCP-Safe</h1>
+    <h1>SCP-038</h1>
 
-    <h2>SCP-038</h2>
+    <p class="subtitle">Dossier en cours de rédaction</p>
 
-    <p>
+    <div class="content-box">
 
-        Bienvenue dans le dossier SCP-038.
+        <p class="field-label">Personnel nécessaire :</p>
+        <p class="field-value">...</p>
 
-    </p>
+        <p class="field-label">But du P.I.N.S :</p>
+        <p class="field-value">...</p>
 
-    <p>
+        <p class="field-label">Ce qui faut faire :</p>
+        <p class="field-value">...</p>
 
-        Cette page est dédiée aux informations
+    </div>
 
-        concernant SCP-038.
-
-    </p>
-
-    <p>
-
-        Contenu du dossier à compléter.
-
-    </p>
-
-    <a href="scp-safe.html" class="back">
-
-        Retour à SCP-Safe
-
-    </a>
+    <a href="scp-safe.html" class="back">Retour aux SCP-Safe</a>
+    <a href="index.html" class="back">Retour à l'accueil</a>
 
 </body>
-
 </html>
